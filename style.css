@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('image/duck-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+}
+
+.container {
+    padding: 10px 6%;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* position: fixed; */
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #ff004f;
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s all;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 25%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+
+}
+
+/* =======about section is here that please be focus on that========== */
+
+
+#about {
+    padding: 88px 0px;
+    color: #ababab;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: all 4s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/* ========= services section is here please be focus ============  */
+
+#services {
+    padding: 30px 0px;
+
+}
+
+.serivces-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 50px;
+    grid-gap: 40px;
+}
+
+.serivces-list div {
+    margin: 35px;
+    background-color: #262626;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    transition: all 0.4s;
+    border-radius: 8px;
+
+}
+
+.serivces-list div i {
+    font-size: 50px;
+    margin-bottom: 40px;
+    align-content: center;
+}
+
+.serivces-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.serivces-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.serivces-list div:hover {
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    border-radius: 8px;
+
+}
+
+/* porfolio */
+
+
+
+#porfolio {
+    padding: 50px 0;
+}
+
+.best-work .work img {
+    /* height: 40%; */
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    display: block;
+    transition: transform 0.5s;
+    z-index: -1;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 50px;
+    grid-gap: 40px;
+    padding: 0 40px;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    font-weight: 500;
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 60px;
+}
+
+.work:hover img {
+    transform: scale(1.2);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+#btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #ff004f;
+    transition: all 0.9s;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: transparent;
+    border: 1px solid #ff004f;
+    color: #ff004f;
+
+}
+
+/* ========= contact section is here that please  */
+#contact {
+    display: block;
+    margin-top: 80px;
+}
+
+#contact .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-right {}
+
+.contact-left p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-left i {
+    color: #ff004f;
+    font-size: 20px;
+}
+
+.social-icons {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 30px;
+    color: #ababab;
+    display: inline-block;
+}
+
+.contact-right form {
+    width: 100%;
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin-top: 15px ;
+    margin-left: 30px;
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 12px;
+
+}
+.copy{
+    width: 100%;
+    text-align: center;
+    padding: 25px o;
+    background: #262626;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.copy p{
+    padding: 12px;
+}
+
+nav .bi{
+    display: none;
+}
+
+
+/* mediaquery is here  */
+
+@media only screen and (max-width:750px) {
+    nav .bi{
+        display: block;
+    }
+
+    nav ul{
+        
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 1;
+        transition: right 0.7s;
+    }
+nav ul li{
+    display: block;
+    margin: 50px;
+    font-size: 30px;
+}     
+nav .bi{
+    font-size: 60px;
+    z-index: 11;
+
+}
+
+nav ul .bi{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    font-size: 50px;
+}
+.about-col-2 {
+    margin-top: 50px;
+}
+
+.row {
+    flex-direction: column;
+}
+.contact-left{
+margin-left: 40px;
+}
+
+.contact-right{
+    margin-right: 60px;
+}
+
+.col {
+    flex-direction: column;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+

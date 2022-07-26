@@ -1,0 +1,255 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashu's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/duck-img.jpg" alt="" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <i class="bi bi-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi I <span> '</span> am <span>Aashu</span> kumar <br> from Delhi</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -------------     about section is heer   !------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/person.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    My name is Aashu kumar and Iam from uttarpradesh but I am living in Delhi or my whole education KG
+                    to PG(final year) are completed in Delhi. Or Iam pusuing a
+                    Bachelor of Arts(B.A.) Degree from "DELHI COLLEGE OF ARTS AND COMMERCE" at 'DELHI UNIVERSITY' . At
+                    this time Iam waiting
+                    for my result .My result will be declare in mid of july then I wil be say that iam gradu In my
+                    family apart my parents I have a younger brother and his name is shivam.
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <!-- <p class="tab-links" onclick="opentab('Education')">Education</p> -->
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>Desinning Web interfaces</li>
+                            <li><span>Backend Developmer</span><br> Desinning Web Development</li>
+                            <li><span>Full stack Development</span><br>Desinning Web interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aashu kumar</span><br>Fronend Development Fresher</li>
+                            <li><span>Aashu kumar</span><br>Backend Developmentm Fresher</li>
+                            <li><span>Aashu kumar </span><br>Desinning Web interfaces Fresher</li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="tab-contents" id="education">
+                        <ul>
+                         <li><span>thunderer</span><br>Desinning Web / App interfaces</li>
+                         <li><span>Web Development</span><br>Web app Development</li>
+                         <li><span>App Development</span><br>Desinning Web / App interfaces</li>
+                        </ul>
+                     </div> -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <h1 class="sub-title">My services</h1>
+        <div class="serivces-list">
+            <div>
+                <i class="bi bi-code-slash"></i>
+                <h2>Web design </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nostrum ipsum expedita assumenda
+                    veritatis nesciunt eius voluptatum. Quas, voluptas illo eius dolores doloribus ab est neque odit
+                    dolore sint dicta in consequatur deleniti consequuntur placeat harum. Temporibus, mollitia. Iure
+                    sunt minima a, explicabo dignissimos neque, voluptas quia earum cumque commodi soluta vero dicta!
+                    Unde, alias explicabo nihil perspiciatis voluptatibus dicta voluptates eius rem eum sed nisi odio
+                    suscipit dolorem blanditiis aliquam accusamus aliquid quia aperiam perferendis illo ducimus
+                    distinctio? Consectetur.</p>
+                <a href="http://">Learn more..</a>
+            </div>
+
+            <div>
+                <i class="bi bi-google-play"></i>
+                <h2>Web design </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nostrum ipsum expedita assumenda
+                    veritatis nesciunt eius voluptatum. Quas, voluptas illo eius dolores doloribus ab est neque odit
+                    dolore sint dicta in consequatur deleniti consequuntur placeat harum. Temporibus, mollitia. Iure
+                    sunt minima a, explicabo dignissimos neque, voluptas quia earum cumque commodi soluta vero dicta!
+                    Unde, alias explicabo nihil perspiciatis voluptatibus dicta voluptates eius rem eum sed nisi odio
+                    suscipit dolorem blanditiis aliquam accusamus aliquid quia aperiam perferendis illo ducimus
+                    distinctio? Consectetur.</p>
+                <a href="http://">Learn more..</a>
+
+            </div>
+
+            <div>
+                <i class="bi bi-person-bounding-box"></i>
+                <h2>Web design </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nostrum ipsum expedita assumenda
+                    veritatis nesciunt eius voluptatum. Quas, voluptas illo eius dolores doloribus ab est neque odit
+                    dolore sint dicta in consequatur deleniti consequuntur placeat harum. Temporibus, mollitia. Iure
+                    sunt minima a, explicabo dignissimos neque, voluptas quia earum cumque commodi soluta vero dicta!
+                    Unde, alias explicabo nihil perspiciatis voluptatibus dicta voluptates eius rem eum sed nisi odio
+                    suscipit dolorem blanditiis aliquam accusamus aliquid quia aperiam perferendis illo ducimus
+                    distinctio? Consectetur.</p>
+                <a href="http://">Learn more..</a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ----------------- portfolio -----------------  -->
+
+
+    <div id="portfolio">
+        <div class="best-work">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/person.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla at consequatur facere?
+                            Temporibus, quisquam nisi necessitatibus, id vero dolorum, amet quidem soluta alias
+                            consectetur exercitationem.</p>
+                        <a href="http://"><i class="bi bi-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image/person.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla at consequatur facere?
+                            Temporibus, quisquam nisi necessitatibus, id vero dolorum, amet quidem soluta alias
+                            consectetur exercitationem.</p>
+                        <a href="http://"><i class="bi bi-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image/person.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla at consequatur facere?
+                            Temporibus, quisquam nisi necessitatibus, id vero dolorum, amet quidem soluta alias
+                            consectetur exercitationem.</p>
+                        <a href="http://"><i class="bi bi-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="btn"> See more</a>
+        </div>
+    </div>
+
+  
+
+    <div id="contact">
+        <div class="row ">
+            <div class="col">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-send-fill"></i> aashukumar0202@gmail.com</p>
+                    <p> <i class="bi bi-telephone"></i> 8851258914</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com"> <i class="bi bi-github"></i></a>
+                        <a href="http://"><i class="bi bi-twitter"></i></a>
+                        <a href="http://"> <i class="bi bi-meta"></i></a>
+                        <a href="http://"> <i class="bi bi-linkedin"></i></a>
+                        <a href="image/AashuKumarResume.pdf" download="" id="btn"> Download CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="/image/aashu(web).pdf" method="POST">
+
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your E-mail" required>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <button type="submit" id="btn">submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="copy">
+                <p>copyright@ all reserved by the aashukumar</p>
+            </div>
+        </div>
+
+
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('tab-contents');
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.toggle('active-link');
+                }
+
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.toggle('active-tab');
+                }
+
+
+
+                //    event.currentTarget.classList.add('active-link');
+                //    document.getElementById(tabname).classList.add('active-tab');
+            }
+
+
+
+
+            var sidemenu = document.getElementById('sidemenu');
+
+            function openmenu() {
+                sidemenu.style.right = '0';
+            }
+
+            function closemenu() {
+                sidemenu.style.right = '-200';
+            }
+
+        </script>
+</body>
+
+</html>
